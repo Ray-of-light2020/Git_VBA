@@ -11,7 +11,7 @@ Sub today()
  Leaving_work = "17:00" 
  
  serach_column = 1
- today_ = Application.InputBox(prompt:="ï¿½È‰ï¿½ï¿½Ì“ï¿½ï¿½É‚ï¿½ï¿½É“ï¿½ï¿½Í‚ï¿½ï¿½Ü‚ï¿½ï¿½B", Default:=Date)
+ today_ = Application.InputBox(prompt:="ˆÈ‰º‚Ì“ú‚É‚¿‚É“ü—Í‚µ‚Ü‚·B", Default:=Date)
  day_set = serch(serach_column, today_)
   
  ActiveSheet.Cells(day_set, serach_column).Interior.Color = vbYellow
@@ -26,10 +26,10 @@ Sub today()
       .Value = Leaving_work
       .NumberFormatLocal = "[h]:mm"
     End With
-        MsgBox "ï¿½ï¿½ï¿½Í’lï¿½ÌŠmï¿½Fï¿½ï¿½ï¿½ï¿½ï¿½è‚¢ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½B"
+        MsgBox "“ü—Í’l‚ÌŠm”F‚ğ‚¨Šè‚¢‚µ‚Ü‚·B"
     
     Else
-        MsgBox today_ & "ï¿½ï¿½ï¿½Í“ï¿½ï¿½ÍÏ‚İ‚Å‚ï¿½ï¿½"
+        MsgBox today_ & "“ú‚Í“ü—ÍÏ‚İ‚Å‚·¡"
  End If
   ActiveSheet.Cells(day_set, 1).Interior.Color = xlNone
   
